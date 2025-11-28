@@ -86,7 +86,7 @@ export function AppProvider({ children }) {
     setSosList((p) => p.map((s) => (s.id === id ? { ...s, status: 'dismissed' } : s)));
   }
 
-  // ✅ New: acknowledgeSos function
+  // AcknowledgeSos Function
   function acknowledgeSos(id) {
     setSosList((p) =>
       p.map((s) => (s.id === id ? { ...s, status: 'acknowledged' } : s))
